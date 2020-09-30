@@ -160,7 +160,7 @@ a {
     font-size: 6rem;
     opacity: 0;
     font-family: 'lobster'cursive;
-    animation-name: bottomTotop;
+    animation-name: bottomToTop;
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -192,7 +192,7 @@ a {
     color: red;
     animation-duration: 1s;
     animation-iteration-count: infinite;
-    animation-name: infrotate;
+    animation-name: infRotate;
     animation-timing-function: linear;
 
 }
@@ -269,4 +269,26 @@ a {
     left: 0;
 
 
+}
+
+@keyframes bottomToTop {
+    from {
+        transform: translateY(20vh);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes infRotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
