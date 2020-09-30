@@ -192,6 +192,7 @@ a {
     color: red;
     animation-duration: 1s;
     animation-iteration-count: infinite;
+    animation-name: infrotate;
     animation-timing-function: linear;
 
 }
