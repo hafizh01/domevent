@@ -21,7 +21,7 @@ body {
     overflow-x: hidden;
     user-select: none;
     overflow-x: hidden;
-    background-color: black;
+    background-color: white;
 
 
 }
@@ -49,6 +49,7 @@ a {
     color: white;
     gap: 20px;
     font-family: 'Noto Sans JP', sans-serif;
+    z-index: 200;
 }
 
 .modalMenu a {
@@ -74,7 +75,7 @@ a {
     justify-content: flex-start;
     align-items: center;
     background-color: red;
-    padding: 0 5%;
+    padding: 0 40px;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -132,10 +133,24 @@ a {
 }
 
 .home {
+
+    display: flex;
+    display: flex;
+    flex-direction: column;
     background-color: white;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 20px;
+
+}
+
+.home_content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
 
 }
 
@@ -169,10 +184,48 @@ a {
 }
 
 .about {
-    background-image: url(https://picsum.photos/seed/16/900);
-    flex-direction: column;
-    justify-content: flex-start;
+    background-color: gray;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "box1 box2"
+        "box3 box4"
 
+    ;
+}
+
+.box {
+    padding: 20px;
+    border: 1px solid chocolate;
+}
+
+
+.about_box1 {
+    grid-template: box1;
+    background-image: url(https://picsum.photos/seed/452/600);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 200px 0;
+    background-attachment: fixed;
+}
+
+.about_box2 {
+    grid-template: box2;
+
+}
+
+.about_box3 {
+    grid-template: box3;
+}
+
+.about_box4 {
+    grid-template: box4;
+    background-image: url(https://picsum.photos/seed/291/600);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 200px 0;
+    background-attachment: fixed;
 
 }
 
@@ -181,9 +234,34 @@ a {
 }
 
 .gallery {
-    background-image: url(https://picsum.photos/seed/64/900);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.container-gallery {
+    width: 100vw;
+    padding: 20px 40px !important;
+    display: flex;
+    padding: 20px;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    transition-duration: .5s;
+
+}
+
+.container-gallery img {
+    transition-duration: .5s;
+
+}
+
+.container-gallery img:hover {
+    border-radius: 200px;
+
 
 }
 
@@ -267,6 +345,7 @@ a {
     position: sticky;
     top: 10vh;
     left: 0;
+    z-index: 80;
 
 
 }

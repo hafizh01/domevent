@@ -32,5 +32,22 @@ const hideaboutAlert = () => {
 
     aboutAlert.style.display = 'none'
 
+}
+
+//kita akan buat element html
+//menggunakan javascript
+
+//tangkap element HtmL
+let gallery = document.getElementById('container-gallery')
+let img = 50
+//INSERT HTML SYNTAX into gallery
+
+for (let i = 0; i <= 30; i++) {
+
+    gallery.innerHTML += `
+
+<img src = "https://picsum.photos/seed/${img++}/200">
+        
+`
 
 }
