@@ -27,7 +27,7 @@ const hideModal = () => {
 const hideaboutAlert = () => {
 
 
-    //kita ambil element yang akan di show
+    //kita ambil element  HTML yang akan di show di Javascript
     let aboutAlert = document.querySelector('.aboutAlert')
 
     aboutAlert.style.display = 'none'
@@ -39,7 +39,7 @@ const hideaboutAlert = () => {
 
 //tangkap element HtmL
 let gallery = document.getElementById('container-gallery')
-let img = 50
+let img = 13
 //INSERT HTML SYNTAX into gallery
 
 for (let i = 0; i <= 30; i++) {
